@@ -37,7 +37,7 @@ export class UsuarioRepository {
 
   async buscaPorId(id: string) {
     const possivelUsuario = this.usuarios.find(
-      (usuarioSalvo) => usuarioSalvo.id === id
+      (usuarioSalvo) => usuarioSalvo.id === id,
     );
 
     if (!possivelUsuario) {
